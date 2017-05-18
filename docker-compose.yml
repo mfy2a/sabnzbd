@@ -1,0 +1,9 @@
+sabnzbd:
+    image: "sabnzbd/sabnzbd"
+    container_name: "sabnzbd"
+    volumes:
+        - "$PWD/datadir:/datadir"
+        - "$PWD/media:/media"
+    ports:
+        - "8080:8080"
+    restart: always
